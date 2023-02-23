@@ -1,4 +1,10 @@
-i = float(input("Enter the height: "))
-a = float(input("Enter the width: "))
-Area = i * a
-print("Area of a rectangle is:%.2f" % Area3)
+from datetime import datetime
+
+#get current datetime
+dt = datetime.now()
+print("Dtetime is:", dt)
+
+#get day of week as an integer
+x = dt.weekday()
+print("Day of week is:", x)
+
