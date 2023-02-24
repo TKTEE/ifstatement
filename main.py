@@ -1,10 +1,8 @@
-from datetime import datetime
-
-#get current datetime
-dt = datetime.now()
-print("Dtetime is:", dt)
-
-#get day of week as an integer
-x = dt.weekday()
-print("Day of week is:", x)
-
+import datetime
+date_str = input("Enter a date in the format 'YYYY-MM-DD':")
+try:
+    year, month, day = map(int,date_str.split("-"))
+    date = datetime.date(year, month, day)
+    print(date.strftime("%A"))
+except ValueError:
+    print("False")
